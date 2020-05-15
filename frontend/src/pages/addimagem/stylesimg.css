@@ -1,0 +1,83 @@
+
+.addimagem-container{
+  width: 100%;
+  max-width: 1120px;
+  height: 100vh;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addimagem-container .addimagem-content {
+  width: 100%;
+  padding: 96px;
+  background: #f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addimagem-container .addimagem-content section {
+  width: 100%;
+  max-width: 380px;
+}
+
+.addimagem-container .addimagem-content section h1 {
+  margin: 64px 0 32px;
+  font-size: 32px;
+}
+.addimagem-container .addimagem-content section img {
+    width:100%;
+  margin: 64px 0 32px;
+  font-size: 32px;
+}
+
+.addimagem-container .addimagem-content section p {
+  font-size: 18px;
+  color: #737380;
+  line-height: 32px;
+}
+
+.addimagem-container .addimagem-content form {
+  width: 100%;
+  max-width: 450px;
+}
+.addimagem-container .addimagem-content form img {
+  width:200px;
+  margin-top:10px;
+  margin-left:10px;
+}
+
+.addimagem-container .addimagem-content form input {
+  margin-top: 8px;
+}
+
+ input {
+    margin-top:30px;
+    width: 127px;
+    height: 127px;
+    background: url("../../assests/pets.jpg");
+    overflow: hidden;
+}
+ 
+div  input[type='file'] {
+    
+    display:none;
+  }
+  
+  /* Aparência que terá o seletor de arquivo */
+  div  label {
+      margin-top:30px;
+   
+    background-color: #e02041;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    margin: 10px;
+    padding: 6px 20px
+  }

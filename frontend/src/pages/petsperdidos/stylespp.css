@@ -1,0 +1,110 @@
+.petsperdidos-container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 30px;
+    margin: 32px auto;
+  }
+  
+  .petsperdidos-container header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .petsperdidos-container header span {
+    font-size: 20px;
+    
+  }
+  
+  .petsperdidos-container header img {
+    height: 64px;
+  }
+  
+  .petsperdidos-container header a {
+    width: 260px;
+    margin-left: auto;
+    margin-top: 0;
+  }
+  
+  .petsperdidos-container header button {
+    height: 60px;
+    width: 60px;
+    border-radius: 4px;
+    border: 1px solid #dcdce6;
+    background: transparent;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+    right:5px;
+    margin-left:500px;
+  }
+  .petsperdidos-container header .button {
+    height: 60px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #dcdce6;
+    background: #e02041;
+    margin-left: 16px;
+    transition: border-color 0.2s;
+  }
+  
+  .petsperdidos-container header button:hover {
+    border-color: #999;
+  }
+  
+  .petsperdidos-container h1 {
+    margin-top: 80px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .petsperdidos-container ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+  }
+  
+  .petsperdidos-container ul li {
+    background: #FFF;
+    padding: 24px;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  .petsperdidos-container ul li button {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    border: 0;
+  }
+  .petsperdidos-container ul li h3 {
+    text-align:center;
+  }
+  
+  
+
+  
+  .petsperdidos-container ul li button:hover {
+    opacity: 0.8;
+  }
+  
+  .petsperdidos-container ul li strong {
+    display: block;
+    margin-bottom: 16px;
+    color: #41414d;
+  }
+  
+  .petsperdidos-container ul li p + strong {
+    margin-top: 32px;
+  }
+  
+  .petsperdidos-container ul li p {
+    color: #737380;
+    line-height: 21px;
+    font-size: 16px;
+  }
+
+  .petsperdidos-container ul li ul li img {
+      width:80px;
+      height:80px;
+      
+  }
