@@ -4,10 +4,12 @@ module.exports = {
     async create(req,res){
 
         const pet_id = req.headers.authorization;
-        const { description,cidade,rua,numero,bairro,uf} = req.body;
+        const { description,cidade,rua,numero,bairro,uf,latitude,longitude} = req.body;
         
 
         await connection('positions').insert({
+            latitude,
+            longitude,
             description,
             cidade,
             rua,

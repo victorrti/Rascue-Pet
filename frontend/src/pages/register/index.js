@@ -27,7 +27,7 @@ export default function Logon(){
 
        try{ const response = await api.post('donos',data);
 
-       alert(`seu ID de acesso: ${response.data.id}`);
+       alert(`seu ID de acesso: ${response.data.message}`);
 
        history.push('/');
 

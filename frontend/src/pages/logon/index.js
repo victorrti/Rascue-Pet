@@ -9,6 +9,8 @@ import api from '../../services/api'
 
 import imagem from '../../assests/images.png'
 import logo from '../../assests/pets.jpg'
+import pets from '../../assests/principal.png'
+import cat from '../../assests/pet-cat.png'
 
 import './stylesl.css'
 
@@ -40,7 +42,7 @@ export default function Logon(){
     return(
         <div className="logon-container">
          <section className="form">
-             <img  src={imagem} alt="petslogo" />
+             <img  src={cat} alt="petslogo" />
               
             
             <form onSubmit={Login}>
@@ -62,7 +64,7 @@ export default function Logon(){
 
 
          </section>
-         <img src= {logo} alt = "petsImagem"/>
+         <img src= {pets} alt = "petsImagem"/>
 
         </div>
     );

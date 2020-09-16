@@ -5,6 +5,7 @@ import api from    '../../services/api'
 
 import imagem from '../../assests/images.png'
 import  './stylesnpt.css'
+import cat from '../../assests/pet-cat.png'
 
 
 
@@ -48,7 +49,7 @@ export default function Logon(){
         <div className="newpet-container">
             <div className="newpet-content">
          <section >
-             <img className="imagemLogo" src={imagem} alt="petslogo" />
+             <img className="imagemLogo" src={cat} alt="petslogo" />
 
              <span>Cadastre seu pet, para Encontra-lo. Se desejar ofereça uma recompensa (não e obrigatorio)</span>
 

@@ -76,7 +76,7 @@ export default function PetsPerdidos(){
                 <p>{pet.whatsapp}</p>
 
                 <strong>Recompensa</strong>
-                <p>{pet.value}</p>
+                <p>{Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(pet.value)}</p>
 
                 <strong>Descrição:</strong>
                 <p>{pet.description}</p>

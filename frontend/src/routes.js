@@ -4,12 +4,13 @@ import {BrowserRouter,Route,Switch} from 'react-router-dom'
 import Logon from './pages/logon'
 import register from './pages/register'
 import Pets from './pages/petsperdidos'
-import NewPosition from './pages/newposition'
+import NewPosition from './pages/NewPosition'
 import MeusPets from './pages/meuspets'
 import NewPet from './pages/newpet'
 import Position from './pages/positions'
 import petedit from './pages/editPet'
 import AddImagem from './pages/addimagem'
+
 
 
 export default function Routes(){
@@ -26,6 +27,7 @@ export default function Routes(){
                     <Route path="/position" component={Position} />
                     <Route path="/editar" component={petedit} />
                     <Route path="/adicionar-imagem" component={AddImagem} />
+                    
                     
                     
    

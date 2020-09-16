@@ -4,6 +4,7 @@ import {FiArrowLeft} from 'react-icons/fi'
 
 import api from    '../../services/api'
 import imagem from '../../assests/images.png'
+import cat from '../../assests/pet-cat.png'
 
 import  './stylesimg.css'
 
@@ -52,7 +53,7 @@ export default function Logon(){
         <div className="addimagem-container">
             <div className="addimagem-content">
                 <section>
-                <img  src={imagem} alt="petslogo" />
+                <img  src={cat} alt="petslogo" />
 
                     <span>salve uma imagem de cada vez , para ajudar a identificar seu pet</span>
 

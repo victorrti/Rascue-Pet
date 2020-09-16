@@ -6,7 +6,7 @@ const fs = require('fs')
 
 module.exports = {
     async create(req,res){
-        const id = crypto.randomBytes(4).toString('HEX');
+        const id = crypto.randomBytes(6).toString('HEX');
 
         const {name,value,description} = req.body
         const dono_id = req.headers.authorization;
