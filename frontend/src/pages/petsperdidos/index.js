@@ -3,7 +3,7 @@ import {Link,useHistory} from  'react-router-dom'
 import{FiPower} from 'react-icons/fi'
 import api from '../../services/api'
 
-import Logo from '../../assests/logo.jpg'
+import logo from '../../assests/rascuepetlogo.png'
 import Imgpet from '../componente/imgpetsperdidos'
 
 import './stylespp.css'
@@ -22,7 +22,7 @@ export default function PetsPerdidos(){
             api.get('pets').then(response => setPets(response.data));
 
             localStorage.removeItem('pet_id');
-    })
+    },[])
 
  
 
@@ -47,7 +47,7 @@ export default function PetsPerdidos(){
 
         
          <header>
-             <img src={Logo} alt="logo"></img>
+             <img src={logo} alt="logo"></img>
              <span>Seja Bem-Vindo, {donoName}!</span>
                
 
@@ -66,7 +66,11 @@ export default function PetsPerdidos(){
             {pets.map(pet =>(
                 
                 <li>
+            <header>
             <h3>{pet.name}</h3>
+
+            </header>
+            
             <section>
                   <Imgpet pet={pet}></Imgpet>
                   

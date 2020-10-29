@@ -111,6 +111,7 @@
   #page-create-point form .field label {
     font-size: 14px;
     margin-bottom: 8px;
+    background-color:#eda657 ;
   }
   
   #page-create-point form .field :disabled {
@@ -148,7 +149,7 @@
   #page-create-point form button {
     width: 260px;
     height: 56px;
-    background: var(--primary-color);
+    background: #956440;
     border-radius: 8px;
     color: #FFF;
     font-weight: bold;
@@ -161,7 +162,7 @@
   }
   
   #page-create-point form button:hover {
-    background: #2FB86E;
+    background: #695440;
   }
   
   .items-grid {

@@ -6,12 +6,13 @@ import api from    '../../services/api'
 import imagem from '../../assests/images.png'
 import  './stylesnpt.css'
 import cat from '../../assests/pet-cat.png'
+import logo from '../../assests/rascuepetlogo.png'
 
 
 
 export default function Logon(){
     const [name,setPetName]=useState('');
-    const [recompensa,setRecompensa]=useState('');
+    const [value,setvalue]=useState('');
     const [description,setDescription]=useState('');
   
     const history = useHistory();
@@ -24,7 +25,7 @@ export default function Logon(){
 
         const data = ({
             name,
-            value:recompensa,
+            value:value,
             description,
         })
 
@@ -49,13 +50,13 @@ export default function Logon(){
         <div className="newpet-container">
             <div className="newpet-content">
          <section >
-             <img className="imagemLogo" src={cat} alt="petslogo" />
+             <img className="imagemLogo" src={logo} alt="petslogo" />
 
              <span>Cadastre seu pet, para Encontra-lo. Se desejar ofereça uma recompensa (não e obrigatorio)</span>
 
              <Link  className="back-link"  to="/meuspets">
-                            <FiArrowLeft size={16} color="#e02041 "/>
-                            retornar 
+                            <FiArrowLeft size={16} color="#695440 "/>
+                            Retornar 
          </Link>
 
          </section>
@@ -72,13 +73,13 @@ export default function Logon(){
 
                 <input  
                 placeholder="Digite o valor da recompensa"
-                value={recompensa}
-                onChange={e=>setRecompensa(e.target.value)}/>
+                value={value}
+                onChange={e=>setvalue(e.target.value)}/>
 
                 <textarea  placeholder="Digite uma Descrição do pet, ou algo para ajudar a localiza-lo"
                  value={description}
                  onChange={e=>setDescription(e.target.value)}/>
-                 <button className="button" type="submit">Cadastrar</button>
+                 <button className="button" id="cadastro" type="submit">Cadastrar</button>
 
                   
 

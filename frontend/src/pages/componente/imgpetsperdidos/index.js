@@ -13,7 +13,7 @@ function PetImagem(props){
                 authorization:pet.id,
             }
         }).then(response => setImagem(response.data))
-    })
+    },[pet.id])
 
     return(
         <ul>

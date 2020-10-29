@@ -36,7 +36,7 @@ async delete(req,res){
   console.log('was deleted');
 });
 
-
+return res.json({message:"ok"})
 
 }  }
  

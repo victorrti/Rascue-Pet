@@ -4,6 +4,7 @@ const crypto = require('crypto')
 const nodemailer = require('nodemailer')
 const SMTP_CONFIG = require('../config/smtp');
 const smtpTransport = require('nodemailer-smtp-transport');
+const {celebrate,Segments,Joi}  = require('celebrate')
 
 const transporter =  nodemailer.createTransport(smtpTransport({
      service:'gmail',

@@ -8,6 +8,10 @@ import Logo from '../../assests/images.png'
 
 import ImgPet from '../componente/imgmeuspets'
 
+import cat from '../../assests/rascuepetlogo.png'
+
+
+
 import './stylesmp.css'
 
 export default function PetsPerdidos(){
@@ -63,8 +67,8 @@ useEffect(()=>{
         
          <header>
              
-             <img src={Logo} alt="logo"></img>
-             <Link class="button" to="/petsperdidos">home</Link> 
+             <img src={cat} alt="logo"></img>
+             <Link class="button" to="/petsperdidos">Home</Link> 
              <Link class="button" to="/newpet">Cadastrar Pet</Link>
                
                 
@@ -79,9 +83,9 @@ useEffect(()=>{
             <li  key={pet.id}>
                 <h3>{pet.name}</h3>
             
-            <Link className="editar" onClick={()=>Position(pet.id,'editar')}><FiEdit/> editar pet</Link>
-            <Link className="editar" onClick={()=>Position(pet.id,'adicionar-imagem')}><FiImage/> adicionar imagem</Link>
-            <button onClick={()=>DeletePet(pet.id)}><FiTrash2></FiTrash2></button>
+            <Link className="editar" onClick={()=>Position(pet.id,'editar')}><FiEdit/> Editar pet</Link>
+            <Link className="editar" onClick={()=>Position(pet.id,'adicionar-imagem')}><FiImage/> Adicionar imagem</Link>
+            <button className="button-delete" onClick={()=>DeletePet(pet.id)}><FiTrash2></FiTrash2></button>
             
             <header>
             
@@ -95,8 +99,8 @@ useEffect(()=>{
             
             </section>
             
-            <strong>recompensa:</strong>
-            <p>{pet.value}</p>
+            <strong>Recompensa:</strong>
+            <p>{Intl.NumberFormat('pt-BR',{style:'currency',currency:'BRL'}).format(pet.value)}</p>
             
  
             <strong>Descrição:</strong>
@@ -112,8 +116,10 @@ useEffect(()=>{
                       
         </form>
             
-
-           <Link className="button" onClick={()=>Position(pet.id,'position')}>Ver Localizaçoes</Link>
+             <div className="link">
+             <Link className="button"  onClick={()=>Position(pet.id,'position')}>Ver Localizações</Link>
+             </div>
+           
             
 
         </li>

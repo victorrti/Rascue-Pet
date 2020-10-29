@@ -8,9 +8,10 @@ import api from '../../services/api'
 
 
 import imagem from '../../assests/images.png'
-import logo from '../../assests/pets.jpg'
+
 import pets from '../../assests/principal.png'
 import cat from '../../assests/pet-cat.png'
+import logo from '../../assests/rascuepetlogo.png'
 
 import './stylesl.css'
 
@@ -46,15 +47,15 @@ export default function Logon(){
               
             
             <form onSubmit={Login}>
-            <h1>Faça Seu Logon</h1>
+            <h1>Faça Seu Login</h1>
                 <input type="text" 
                 placeholder="Digite seu ID"
                 value={id}
                 onChange={e => setId(e.target.value)}/>
-                <button className="button" type="submit">Entrar</button>
+                <button className="button-logon" type="submit">Entrar</button>
 
             </form>
-            <Link  className="back-link"  to="/register">
+            <Link  className="back-link-logon"  to="/register">
                             <FiLogIn size={16} color="#e02041 "/>
                             nao tenho cadastro
          </Link>
@@ -64,7 +65,10 @@ export default function Logon(){
 
 
          </section>
-         <img src= {pets} alt = "petsImagem"/>
+         <div className="logo">
+         <img src= {logo} alt = "petsImagem"/>
+         </div>
+         
 
         </div>
     );

@@ -40,15 +40,66 @@ module.exports = {
      async updatepet(req,res){
          const {name,value,description} = req.body
          const pet_id = req.headers.authorization
-
-
-         await connection('pets').where('id','=',pet_id)
+         const petinfo = await connection('pets').where('id','=',pet_id).select('*');
          
-         .update({
-             name:name,
-             value:value,
-             description:description,
-         })
+         
+         if (name != "" ){
+            await connection('pets').where('id','=',pet_id)
+         
+            .update({
+                name:name,
+                
+            })
+
+         } else {
+            await connection('pets').where('id','=',pet_id)
+         
+            .update({
+                name:petinfo[0].name,
+                
+            })
+
+         }
+         if (value != "" ){
+            await connection('pets').where('id','=',pet_id)
+         
+            .update({
+                value:value,
+                
+            })
+
+         } else {
+            await connection('pets').where('id','=',pet_id)
+         
+            .update({
+                value:petinfo[0].value,
+                
+            })
+
+         }
+         if (description != "" ){
+            await connection('pets').where('id','=',pet_id)
+         
+            .update({
+                description:description,
+                
+            })
+
+         } else {
+            await connection('pets').where('id','=',pet_id)
+         
+            .update({
+                description:petinfo[0].description,
+                
+            })
+
+         }
+         
+
+
+
+
+         
          
      },
      async delete(req,res){

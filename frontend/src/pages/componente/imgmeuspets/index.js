@@ -26,7 +26,7 @@ function MPetImagem(props){
                 authorization:pet.id,
             }
         }).then(response => setImagem(response.data))
-    })
+    },[pet.id])
 
     return(
         <ul>
