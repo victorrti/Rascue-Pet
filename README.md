@@ -1,5 +1,5 @@
 # Rascue-Pet
-![](backend/src/github/rascuepetlogo.png)
-## Ajudaremos a eentrar seu amigo de volta, ou ajude um amigo a voltar para casa 
+![](backend/src/github/rascuepetlogo.png {width=40px height=400px})
+## Ajudaremos a encontrar seu amigo, ou ajude um amigo a voltar para seu lar.
 
 
