@@ -1,3 +1,3 @@
 # Rascue-Pet
-![](Rascue-Pet/backend/src/github/rascuepetlogo.png)
+![](/src/github/rascuepetlogo.png)
 
