@@ -1,6 +1,5 @@
 # Rascue-Pet
 ![](backend/src/github/rascuepetlogo.png)
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+## Ajudaremos a eentrar seu amigo de volta, ou ajude um amigo a voltar para casa 
+
 
