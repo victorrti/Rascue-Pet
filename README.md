@@ -9,6 +9,6 @@
 ### Cadastro de um pet
 ![](https://github.com/victorrti/Rascue-Pet/blob/master/backend/src/github/cadastro-pet.gif )
 ## Contribuidores 
-designer da logo - Vanessa Cristina - instagram - @_vanessadesign_
+designer da logo - Vanessa Cristina - instagram - https://www.instagram.com/_vanessadesign_/?hl=pt-br
 
 
